@@ -1,0 +1,98 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hola {   
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 0.9em !important;
+}
+
+.noMargen{
+  margin: 0;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#contenedor > div {
+  width: 50%;
+}
+
+#contHabilidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.derH {
+ width: 90px;
+}
+
+.izqH {
+  margin-left: 30px;
+  width: 120px;
+}
+
+#centrar {
+  text-align: center;
+}
+
+#centrar>h1 {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.ribbon {
+  width: 80%;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid rgb(49, 128, 150);
+  border-top: 30px solid rgb(49, 128, 150);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.up {
+  position: relative;
+  bottom: 20px;
+}
+
+i {
+  margin: 4px;
+}
+
+button {
+  cursor: pointer;
+  border: 0px;
+  text-align: center;
+  padding: 5px;
+  width: 35px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: rgb(22, 157, 162);
+}
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+#menu-icon {
+  font-size: 1.5em;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
