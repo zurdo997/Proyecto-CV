@@ -2,13 +2,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.hola {   
-    content: "A" !important;
-    display: block !important;
-    margin-bottom: 0.9em !important;
+.salto {
+  content: "A" !important;
+  display: block !important;
+  margin-bottom: 0.9em !important;
 }
 
-.noMargen{
+.noMargen {
   margin: 0;
 }
 
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
 }
 
-#contenedor > div {
+#contenedor>div {
   width: 50%;
 }
 
@@ -28,14 +28,13 @@
   flex-wrap: wrap;
 }
 
-
-.derH {
- width: 90px;
+.izqH {
+  width: 90px;
 }
 
-.izqH {
+.derH {
   margin-left: 30px;
-  width: 120px;
+  width: 90px;
 }
 
 #centrar {
@@ -64,6 +63,17 @@ img {
   margin-bottom: 10px;
 }
 
+#dom {
+  display: none;
+}
+
+.ifDom {
+  width: 480px;
+  height: 400px;
+  border: 0;
+  margin-left: 90px;
+}
+
 .up {
   position: relative;
   bottom: 20px;
@@ -73,16 +83,22 @@ i {
   margin: 4px;
 }
 
-button {
+.nocturno {
   cursor: pointer;
-  border: 0px;
+  border: 2px solid rgb(49, 128, 150);
   text-align: center;
   padding: 5px;
-  width: 35px;
+  width: 40px;
   position: absolute;
   top: 30px;
   right: 30px;
-  background: rgb(22, 157, 162);
+}
+
+.flecha {
+  cursor: pointer;
+  border: 0px;
+  text-align: center;
+  width: 30px;
 }
 
 .dark {
@@ -90,9 +106,56 @@ button {
   color: #e6e6e6;
 }
 
+.verMas {
+  cursor: pointer;
+  border: 2px solid rgb(49, 128, 150);
+  text-align: center;
+}
+
+.dark .verMas {
+  background-color: #222;
+  color: #e6e6e6;
+  border: 2px solid rgb(72, 153, 90);
+}
+
+.dark .flecha {
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+.dark .nocturno {
+  background-color: #222;
+  color: #e6e6e6;
+  border: 2px solid rgb(72, 153, 90);
+}
+
+.dark .ribbon {
+  border-bottom: 30px solid rgb(72, 153, 90);
+  border-top: 30px solid rgb(72, 153, 90);
+}
+
 #menu-icon {
   font-size: 1.5em;
   user-select: none;
   cursor: pointer;
   transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .derH {
+    margin: 0;
+  }
+  .test1 {
+    font-size: 24px;
+    bottom: 30px;
+  }
+  .test2 {
+    font-size: 24px;
+  }
+  .ifDom {
+    width: 250px;
+    height: 200px;
+    border: 0;
+    margin-left: 25px;
+  }
 }
